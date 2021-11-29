@@ -10,13 +10,39 @@ import SwiftUI
 struct profile: View {
     var body: some View {
         ZStack {
-            Color("imperialGrey")
+            Color("imperialGreen")
                 .edgesIgnoringSafeArea(.top)
             VStack {
+                ZStack {
+                    Color.white
+                        .edgesIgnoringSafeArea(.top)
+                    HStack(alignment: .center) {
+                        
+                    Image("Imperial")
+                       
+                    Text("Profile")
+                        .font(Font.custom("Aurek-Besh", size: 20))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .frame(width: 200.0, height: 75.0)
+                    
+                    Image("Imperial")
+                     
+                    }
+                    .padding()
+                }
+                .frame(height: 100.0)
+                
+                
+                Spacer()
+                
                 Text("Profile")
+                    .font(Font.custom("Aurek-Besh", size: 18))
                     .foregroundColor(Color.white)
-            }
-        }
+                
+                Spacer()
+                    }
+                }
     }
 }
 

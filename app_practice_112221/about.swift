@@ -13,10 +13,36 @@ struct about: View {
             Color("imperialGrey")
                 .edgesIgnoringSafeArea(.top)
             VStack {
-                Text("About")
+                ZStack {
+                    Color.white
+                        .edgesIgnoringSafeArea(.top)
+                    HStack(alignment: .center) {
+                        
+                    Image("Imperial")
+                       
+                    Text("About us")
+                        .font(Font.custom("Aurek-Besh", size: 18))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .frame(width: 200.0, height: 75.0)
+                    
+                    Image("Imperial")
+                     
+                    }
+                    .padding()
+                }
+                .frame(height: 100.0)
+                
+                
+                Spacer()
+                
+                Text("About us")
+                    .font(Font.custom("Aurek-Besh", size: 18))
                     .foregroundColor(Color.white)
-            }
-        }
+                
+                Spacer()
+                    }
+                }
     }
 }
 

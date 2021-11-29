@@ -10,37 +10,45 @@ import SwiftUI
 struct mainPage: View {
     var body: some View {
         ZStack {
-            Color("imperialColor")
+            Color.black
                 .edgesIgnoringSafeArea(.top)
             VStack {
                 ZStack {
-                    Color("imperialGrey")
+                    Color.white
                         .edgesIgnoringSafeArea(.top)
-                    HStack(alignment: .bottom) {
-                    Image("Imperial")
-                        .cornerRadius(/*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/)
-                    
-                    Text("Welcome!")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .padding(.top, 35.0)
-                        .frame(width: 200.0, height: 75.0)
-                            
+                    HStack(alignment: .center) {
                         
+                    Image("Imperial")
+                       
+                    Text("Welcome!")
+                        .font(Font.custom("Aurek-Besh", size: 20))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .frame(width: 200.0, height: 75.0)
                     
                     Image("Imperial")
-                        .cornerRadius(/*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/)
+                     
                     }
                     .padding()
                 }
                 .frame(height: 100.0)
                 
                 
-                Spacer()
+               
+                    
+                Text("Welcome")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .padding(.vertical)
+                HStack(alignment: .top) {
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ")
+                    .foregroundColor(Color.white)
+                Image("aboutLarge")
+                }
                 
-                Text("Hello")
-                
+                Text("Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.")
+                    .foregroundColor(Color.white)
                 Spacer()
                     }
                 }
